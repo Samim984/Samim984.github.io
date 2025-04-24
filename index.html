@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Samim Imtiaz | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+    }
+
+    header {
+      background-color: #343a40;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .resume-btn {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background-color: #ffc107;
+      color: #000;
+      padding: 8px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      background-color: #dee2e6;
+      flex-wrap: wrap;
+    }
+
+    .tab-button {
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: #dee2e6;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      transition: background 0.2s;
+    }
+
+    .tab-button:hover, .tab-button.active {
+      background-color: #ced4da;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      color: #343a40;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .button-link {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 8px 14px;
+      margin: 5px 8px 5px 0;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .button-link:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Samim Imtiaz</h1>
+    <p>Data Scientist | Power BI Developer | ML Enthusiast</p>
+    <a href="Resume@Samim Imtiaz.pdf" class="resume-btn" target="_blank">📄 Download Resume</a>
+  </header>
+
+  <div class="tabs">
+    <button class="tab-button active" onclick="openTab('experience')">💼 Experience</button>
+    <button class="tab-button" onclick="openTab('projects')">📊 Projects</button>
+    <button class="tab-button" onclick="openTab('education')">🎓 Education</button>
+    <button class="tab-button" onclick="openTab('certifications')">📄 Certifications</button>
+    <button class="tab-button" onclick="openTab('contact')">📬 Contact</button>
+  </div>
+
+  <div id="experience" class="tab-content active">
+    <h2>Work Experience</h2>
+    <ul>
+      <li><strong>Data Scientist Intern</strong> – Intellipaat (Nov 2023 – Oct 2024)<br>Power BI, SQL, Excel, Python</li>
+      <li><strong>Area Manager</strong> – Indovision Pvt Ltd (Dec 2022 – Oct 2023)<br>Client: Airtel | Project: 5G Rollout</li>
+      <li><strong>Senior Executive</strong> – Integrated Wireless Solution (Jun 2015 – Aug 2020)<br>Client: JIO | Project: 4G Rollout</li>
+      <li><strong>O&M (BSS)</strong> – Have Us Solution (Dec 2011 – May 2014)<br>Client: IDEA | Project: 2G Rollout</li>
+      <li><strong>Rollout Engineer</strong> – Kelly Pvt Ltd (Jul 2009 – Nov 2011)<br>Client: MTS | Project: CDMA Rollout</li>
+    </ul>
+  </div>
+
+  <div id="projects" class="tab-content">
+    <h2>Power BI Projects</h2>
+    <ul>
+      <li><strong>CAR SALES:</strong> <a href="#">LINK</a> – Interactive analysis for 8 car brands</li>
+      <li><strong>WATCH SALES:</strong> <a href="#">LINK</a> – Sales with DAX, Filters, UX</li>
+      <li><strong>Sales Overview Dashboard:</strong> <a href="#">LINK</a> – YoY metrics & regional data</li>
+      <li><strong>Adidas Sales Analysis:</strong> <a href="#">LINK</a> – Total sales & YoY growth</li>
+      <li><strong>Blinkit Sales:</strong> <a href="#">LINK</a> – Outlet-wise performance</li>
+      <li><strong>Financial Performance:</strong> <a href="#">LINK</a> – KPI & trend analysis</li>
+      <li><strong>AdventureWorks:</strong> <a href="#">LINK</a> – Orders & returns dashboard</li>
+    </ul>
+  </div>
+
+  <div id="education" class="tab-content">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Post Graduate in Data Science & AI</strong> – Intellipaat IIT Roorkee (2023–2024)</li>
+      <li><strong>DLED</strong> – WB Board of Primary Education (2022)</li>
+      <li><strong>B.Tech in ECE</strong> – AIEMD (WBUT) (2007)</li>
+      <li><strong>HSC</strong> – WBBHSE (2003)</li>
+      <li><strong>SSC</strong> – WBBSE (2000)</li>
+    </ul>
+  </div>
+
+  <div id="certifications" class="tab-content">
+    <h2>Certifications</h2>
+    <a class="button-link" href="Advance Microsoft Excel Certificate ID 31679-26609-246298.pdf" target="_blank">Excel Certificate</a>
+    <a class="button-link" href="PowerBI Certificate ID 31679-52499-246298.pdf" target="_blank">Power BI Certificate</a>
+    <a class="button-link" href="Microsoft SQL Certificate ID 31679-2853-246298.pdf" target="_blank">SQL Certificate</a>
+    <a class="button-link" href="Python Preparatory Certificate ID 31679-397988-246298.pdf" target="_blank">Python Certificate</a>
+    <a class="button-link" href="Machine Learning Certificate ID 31679-120091-246298.pdf" target="_blank">ML Certificate</a>
+    <a class="button-link" href="Deep learning Certificate ID 31679-1135459-246298.pdf" target="_blank">Deep Learning Certificate</a>
+  </div>
+
+  <div id="contact" class="tab-content">
+    <h2>Contact</h2>
+    <p>Email: samimimtiazhuawei@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/Samim984" target="_blank">github.com/Samim984</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/samim-imtiaz-611a35273" target="_blank">linkedin.com/in/samim-imtiaz-611a35273</a></p>
+  </div>
+
+  <script>
+    function openTab(tabId) {
+      const tabs = document.querySelectorAll('.tab-content');
+      const buttons = document.querySelectorAll('.tab-button');
+
+      tabs.forEach(tab => tab.classList.remove('active'));
+      buttons.forEach(btn => btn.classList.remove('active'));
+
+      document.getElementById(tabId).classList.add('active');
+      event.currentTarget.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
