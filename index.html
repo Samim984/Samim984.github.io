@@ -1,86 +1,126 @@
-<!-- SQL Projects Section -->
-<div class="section">
-  <h2>🗃️ SQL Projects</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Samim Imtiaz | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
 
-  <div class="accordion">
-    <button class="accordion-btn" onclick="toggleAccordion(this)">SQL CASE STUDY</button>
-    <div class="accordion-content">
-      <p>Retrieving data using SQL: SELECT, WHERE, GROUP BY, JOIN, SET Operators, Subqueries.</p>
-      <a href="https://github.com/Samim984/SQL-CASE-STUDY-" target="_blank">View GitHub Repo</a>
-    </div>
+    h1, h2 {
+      color: #333;
+    }
+
+    h1 {
+      text-align: left;
+    }
+
+    .profile-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #007acc;
+    }
+
+    .resume-download {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      background: #ffc107;
+      color: black;
+      padding: 8px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .section {
+      margin-top: 40px;
+    }
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      border-radius: 8px;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Resume Button -->
+<a class="resume-download" href="Resume@Samim Imtiaz.pdf" target="_blank">📄 Download Resume</a>
+
+<!-- Profile Section -->
+<div class="profile-container">
+  <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+  <div>
+    <h1>Samim Imtiaz</h1>
+    <p><strong>Data Scientist | Power BI Developer | ML Enthusiast</strong></p>
   </div>
 </div>
 
-<!-- Data Science & AI Projects Section -->
+<!-- Certificates Section -->
 <div class="section">
-  <h2>🤖 Data Science & AI Projects</h2>
-
-  <div class="accordion">
-    <button class="accordion-btn" onclick="toggleAccordion(this)">Nifty 50 & Indian Stock Market</button>
-    <div class="accordion-content">
-      <p>Time-series analysis of Indian stock market with technical indicators and visual insights.</p>
-      <a href="https://github.com/Samim984/Nifty_50_e_Indian_Stock_Market" target="_blank">View GitHub Repo</a>
-    </div>
-  </div>
-
-  <div class="accordion">
-    <button class="accordion-btn" onclick="toggleAccordion(this)">A Fintech Firm Transition</button>
-    <div class="accordion-content">
-      <p>Analyzing financials to guide AI transition strategy for a fintech client.</p>
-      <a href="https://github.com/Samim984/A-Fintech-firm-financial-analyze" target="_blank">View GitHub Repo</a>
-    </div>
-  </div>
-
-  <div class="accordion">
-    <button class="accordion-btn" onclick="toggleAccordion(this)">Online Marketing Spend</button>
-    <div class="accordion-content">
-      <p>Modeling ROI from marketing spend using machine learning and campaign data analysis.</p>
-      <a href="https://github.com/Samim984/Online-Advertising-Firm" target="_blank">View GitHub Repo</a>
-    </div>
+  <h2>📄 My Certificates</h2>
+  <div class="button-group">
+    <a href="Advance Microsoft Excel Certificate ID 31679-26609-246298.pdf" class="btn" style="background:#4caf50;">Excel Certificate</a>
+    <a href="PowerBI Certificate ID 31679-52499-246298.pdf" class="btn" style="background:#2196f3;">Power BI Certificate</a>
+    <a href="Microsoft SQL Certificate ID 31679-2853-246298.pdf" class="btn" style="background:#673ab7;">SQL Certificate</a>
+    <a href="Python Preparatory Certificate ID 31679-397988-246298.pdf" class="btn" style="background:#ff9800;">Python Certificate</a>
+    <a href="Machine Learning Certificate ID 31679-120091-246298.pdf" class="btn" style="background:#009688;">ML Certificate</a>
+    <a href="Deep learning Certificate ID 31679-1135459-246298.pdf" class="btn" style="background:#795548;">Deep Learning Certificate</a>
   </div>
 </div>
 
-<!-- Machine Learning Projects Section -->
+<!-- Experience Section -->
 <div class="section">
-  <h2>🧠 Machine Learning Projects</h2>
-
-  <div class="accordion">
-    <button class="accordion-btn" onclick="toggleAccordion(this)">Netflix Recommendation Engine</button>
-    <div class="accordion-content">
-      <p>ML-based recommender system for Netflix content using collaborative filtering techniques.</p>
-      <a href="https://github.com/Samim984/Project-Netflix" target="_blank">View GitHub Repo</a>
-    </div>
-  </div>
-
-  <div class="accordion">
-    <button class="accordion-btn" onclick="toggleAccordion(this)">Walmart Capstone Project</button>
-    <div class="accordion-content">
-      <p>Statistical analysis of Walmart sales data for forecasting and decision support.</p>
-      <a href="https://github.com/Samim984/Walmart-Project" target="_blank">View GitHub Repo</a>
-    </div>
+  <h2>💼 Work Experience</h2>
+  <div class="button-group">
+    <span class="btn" style="background:#607d8b;">Intellipaat (2023-2024)</span>
+    <span class="btn" style="background:#3f51b5;">Indovision Pvt Ltd (2022-2023)</span>
+    <span class="btn" style="background:#e91e63;">IWS Pvt Ltd (2015-2020)</span>
+    <span class="btn" style="background:#f44336;">Have Us Solution (2011-2014)</span>
+    <span class="btn" style="background:#9c27b0;">Kelly Pvt Ltd (2009-2011)</span>
   </div>
 </div>
 
-<!-- Contact Section -->
+<!-- Education Section -->
 <div class="section">
-  <h2>📬 Contact</h2>
-  <p>Email: samimimtiazhuawei@gmail.com</p>
-  <p>GitHub: <a href="https://github.com/Samim984" target="_blank">github.com/Samim984</a></p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/samim-imtiaz-611a35273" target="_blank">linkedin.com/in/samim-imtiaz-611a35273</a></p>
+  <h2>🎓 Education</h2>
+  <div class="button-group">
+    <span class="btn" style="background:#3949ab;">PG - Data Science & AI (IIT Roorkee)</span>
+    <span class="btn" style="background:#1e88e5;">DLED - WB Board</span>
+    <span class="btn" style="background:#5e35b1;">B.Tech - ECE, WBUT</span>
+    <span class="btn" style="background:#7cb342;">HSC - WBBHSE</span>
+    <span class="btn" style="background:#8d6e63;">SSC - WBBSE</span>
+  </div>
 </div>
-
-<!-- JavaScript for Accordion -->
-<script>
-  function toggleAccordion(btn) {
-    const content = btn.nextElementSibling;
-    const isOpen = content.style.display === "block";
-    document.querySelectorAll(".accordion-content").forEach(c => c.style.display = "none");
-    if (!isOpen) content.style.display = "block";
-  }
-</script>
-
-</body>
-</html>
 <!-- SQL Projects Section -->
 <div class="section">
   <h2>🗃️ SQL Projects</h2>
