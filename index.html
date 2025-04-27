@@ -7,38 +7,51 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #f9f9f9;
-      line-height: 1.6;
+      margin: 0;
+      background: #f5f5f5;
     }
-    h1, h2 {
-      color: #333;
-    }
-    .profile-container {
-      display: flex;
-      align-items: center;
-      gap: 20px;
+    .banner {
+      position: relative;
+      height: 300px;
+      background: url('background.jpg') center/cover no-repeat;
     }
     .profile-img {
       width: 120px;
       height: 120px;
       object-fit: cover;
       border-radius: 50%;
-      border: 3px solid #007acc;
+      border: 4px solid white;
+      position: absolute;
+      left: 50px;
+      bottom: -60px;
+      background: white;
     }
-    .resume-download {
-      position: fixed;
-      top: 15px;
-      right: 15px;
+    .resume-btn {
+      position: absolute;
+      right: 30px;
+      top: 30px;
       background: #ffc107;
       color: black;
-      padding: 8px 14px;
-      border-radius: 8px;
-      text-decoration: none;
+      padding: 10px 16px;
       font-weight: bold;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      text-decoration: none;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    .container {
+      max-width: 1000px;
+      margin: 80px auto 20px;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+    p {
+      text-align: center;
+      color: #666;
     }
     .section {
       margin-top: 40px;
@@ -47,210 +60,176 @@
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      justify-content: center;
     }
     .btn {
-      display: inline-block;
       padding: 10px 15px;
-      border-radius: 8px;
-      color: #fff;
       font-weight: bold;
+      color: white;
+      border: none;
+      border-radius: 8px;
       text-decoration: none;
-      font-size: 14px;
       white-space: nowrap;
-      transition: background 0.3s ease;
+      font-size: 14px;
     }
-    .btn:hover {
-      opacity: 0.8;
-    }
+    .btn.green { background: #4caf50; }
+    .btn.blue { background: #2196f3; }
+    .btn.purple { background: #673ab7; }
+    .btn.orange { background: #ff9800; }
+    .btn.teal { background: #009688; }
+    .btn.brown { background: #795548; }
+    .btn.darkblue { background: #3f51b5; }
+    .btn.pink { background: #e91e63; }
+    .btn.red { background: #f44336; }
+    .btn.deepblue { background: #3949ab; }
+    .btn.lightblue { background: #1e88e5; }
+    .btn.lightgreen { background: #7cb342; }
+    .btn.darkbrown { background: #8d6e63; }
+
     .accordion {
       margin-top: 10px;
+      text-align: center;
     }
     .accordion-btn {
-      width: 100%;
-      text-align: left;
+      width: 90%;
       padding: 12px;
+      background: #007acc;
+      color: white;
       font-weight: bold;
       border: none;
-      outline: none;
+      border-radius: 8px;
+      margin: 10px auto;
       cursor: pointer;
-      border-radius: 6px;
-      margin-top: 10px;
-      color: #fff;
-      transition: background 0.3s ease;
+      display: block;
     }
     .accordion-content {
       display: none;
       background: #eef2f3;
+      margin: 5px 50px;
       padding: 15px;
-      border-radius: 6px;
-      margin-top: 5px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    ul li {
-      margin-bottom: 8px;
+      border-radius: 8px;
     }
   </style>
 </head>
+
 <body>
 
-<!-- Resume Download Button -->
-<a class="resume-download" href="Resume@Samim Imtiaz.pdf" target="_blank">📄 Download Resume</a>
-
-<!-- Profile Section -->
-<div class="profile-container">
+<!-- Banner + Profile -->
+<div class="banner">
+  <a href="Resume_Samim_Imtiaz.pdf" class="resume-btn" target="_blank">📄 Download Resume</a>
   <img src="profile.jpg" alt="Profile Photo" class="profile-img">
-  <div>
-    <h1>Samim Imtiaz</h1>
-    <p><strong>Data Scientist | Power BI Developer | ML Enthusiast</strong></p>
-  </div>
 </div>
 
-<!-- Certificates Section -->
-<div class="section">
-  <h2>📄 My Certificates</h2>
-  <div class="button-group">
-    <a href="Advance Microsoft Excel Certificate ID 31679-26609-246298.pdf" class="btn" style="background:#4caf50;" target="_blank">Excel Certificate</a>
-    <a href="PowerBI_Certificate_ID_31679-52499-246298.pdf" class="btn" style="background:#2196f3;" target="_blank">Power BI Certificate</a>
-    <a href="Microsoft SQL Certificate ID 31679-2853-246298.pdf" class="btn" style="background:#673ab7;" target="_blank">SQL Certificate</a>
-    <a href="Python Preparatory Certificate ID 31679-397988-246298.pdf" class="btn" style="background:#ff9800;" target="_blank">Python Certificate</a>
-    <a href="Machine Learning Certificate ID 31679-120091-246298.pdf" class="btn" style="background:#009688;" target="_blank">ML Certificate</a>
-    <a href="Deep learning Certificate ID 31679-1135459-246298.pdf" class="btn" style="background:#795548;" target="_blank">Deep Learning Certificate</a>
-  </div>
-</div>
+<div class="container">
+  <h1>Samim Imtiaz</h1>
+  <p><strong>Data Scientist | Power BI Developer | ML Enthusiast</strong></p>
 
-<!-- Work Experience Section -->
-<div class="section">
-  <h2>💼 Work Experience</h2>
-  <div class="button-group">
-    <a href="Internship Latter Intellipaat Samim Imtiaz.pdf" class="btn" style="background:#607d8b;" target="_blank">Intellipaat Internship</a>
-    <a href="Indovision Experience Certificate.pdf" class="btn" style="background:#3f51b5;" target="_blank">Indovision Pvt Ltd</a>
-    <a href="IWS EXPERINCE CERTIFICATE.jpeg" class="btn" style="background:#e91e63;" target="_blank">IWS Pvt Ltd</a>
-    <a href="HAVE_US_HUAWEI_EXEPRIENCE_CERTIFICATE.jpg" class="btn" style="background:#f44336;" target="_blank">Have Us Solution</a>
-    <a href="KELLY_HUAWEI_ EXEPRIENCE_CERTIFICATE.jpg" class="btn" style="background:#9c27b0;" target="_blank">Kelly Pvt Ltd</a>
-  </div>
-</div>
-
-<!-- Education Section -->
-<div class="section">
-  <h2>🎓 Education</h2>
-  <div class="button-group">
-    <a href="Certificate Post Graguation DSAI IPTIH 2502197.JPG" class="btn" style="background:#3949ab;" target="_blank">PG - Data Science & AI (IIT Roorkee)</a>
-    <a href="B-TECH CERTIFICATE.jpg" class="btn" style="background:#1e88e5;" target="_blank">B.Tech - ECE, WBUT</a>
-    <a href="HS CERTIFICATE.jpg" class="btn" style="background:#7cb342;" target="_blank">HSC - WBBHSE</a>
-    <a href="MADHAYAMIK CERTIFICATE.jpg" class="btn" style="background:#8d6e63;" target="_blank">SSC - WBBSE</a>
-  </div>
-</div>
-
-<!-- Projects Section -->
-<div class="section">
-  <h2>📊 Projects</h2>
-
-  <!-- Power BI Projects -->
-  <div class="accordion">
-    <button class="accordion-btn" style="background:#007acc;" onclick="toggleAccordion(this)">🔵 Power BI Projects</button>
-    <div class="accordion-content">
-      <p><strong>Power BI Dashboards showcasing deep business insights:</strong></p>
-      <img src="https://github.com/user-attachments/assets/31ae7377-16cc-47d5-8055-52c1cc3439d4" alt="CAR SALES Dashboard" style="width:100%;max-width:600px;">
-      <p>CAR SALES Dashboard - Comparing sales of iconic brands with interactive toggle navigation.</p>
-      <a class="btn" style="background:#e53935;" href="https://github.com/Samim984/8-CAR-SALES-DASHBORD" target="_blank">View Full Project</a>
-
-      <br><br>
-
-      <img src="https://github.com/user-attachments/assets/8722d894-558f-4c00-aedf-ef41ebcf3f66" alt="WATCH SALES" style="width:100%;max-width:600px;">
-      <p>WATCH SALES - Elegant UX/UI design with dynamic filtering and KPIs.</p>
-      <a class="btn" style="background:#43a047;" href="https://github.com/Samim984/WATCH-SALES" target="_blank">View Full Project</a>
-
-      <br><br>
-
-      <img src="https://github.com/user-attachments/assets/4472dea9-b340-4568-8dfe-715b34e014c6" alt="Sales Overview" style="width:100%;max-width:600px;">
-      <p>Sales Overview - Regional YoY analysis and performance breakdowns.</p>
-      <a class="btn" style="background:#fbc02d;" href="https://github.com/Samim984/SALES-OVERVIEW-DASHBORD" target="_blank">View Full Project</a>
-
-      <br><br>
-
-      <img src="https://github.com/user-attachments/assets/9a799300-9675-427b-8b25-ba0dea6da568" alt="ADIDAS Analysis" style="width:100%;max-width:600px;">
-      <p>ADIDAS Sales - Analyzing regional performance and YoY growth for Adidas products.</p>
-      <a class="btn" style="background:#fb8c00;" href="https://github.com/Samim984/Adidas-Analysis" target="_blank">View Full Project</a>
-
-      <br><br>
-
-      <img src="https://github.com/user-attachments/assets/55d1646c-4749-4105-bf65-e435ed060546" alt="Blinkit Sales" style="width:100%;max-width:600px;">
-      <p>Blinkit Sales Analysis - Outlet-wise metrics and profitability tracking.</p>
-      <a class="btn" style="background:#00acc1;" href="https://github.com/Samim984/BLINKIT-SALES" target="_blank">View Full Project</a>
-
-      <br><br>
-
-      <img src="https://github.com/user-attachments/assets/776ccfa2-f57e-4c0d-8c76-fe553ede4d40" alt="Financial Analysis" style="width:100%;max-width:600px;">
-      <p>Financial Dashboard - Tracking Revenue, COGS, Gross Profit using time intelligence.</p>
-      <a class="btn" style="background:#8e24aa;" href="https://github.com/Samim984/Financial-Performance-Analysis" target="_blank">View Full Project</a>
-
-      <br><br>
-
-      <img src="https://github.com/user-attachments/assets/8341a865-19ab-4cff-a39c-467e1bbea4d3" alt="Adventure Works" style="width:100%;max-width:600px;">
-      <p>Adventure Works - Sales and returns trends over multiple regions and categories.</p>
-      <a class="btn" style="background:#5c6bc0;" href="https://github.com/Samim984/Adventure-Works-Sales-Return" target="_blank">View Full Project</a>
+  <!-- Certificates -->
+  <div class="section">
+    <h2>📄 My Certificates</h2>
+    <div class="button-group">
+      <a href="Advance Microsoft Excel Certificate ID 31679-26609-246298.pdf" class="btn green" target="_blank">Excel Certificate</a>
+      <a href="PowerBI Certificate ID 31679-52499-246298.pdf" class="btn blue" target="_blank">Power BI Certificate</a>
+      <a href="Microsoft SQL Certificate ID 31679-2853-246298.pdf" class="btn purple" target="_blank">SQL Certificate</a>
+      <a href="Python Preparatory Certificate ID 31679-397988-246298.pdf" class="btn orange" target="_blank">Python Certificate</a>
+      <a href="Machine Learning Certificate ID 31679-120091-246298.pdf" class="btn teal" target="_blank">ML Certificate</a>
+      <a href="Deep learning Certificate ID 31679-1135459-246298.pdf" class="btn brown" target="_blank">Deep Learning Certificate</a>
     </div>
   </div>
 
-  <!-- SQL Projects -->
-  <div class="accordion">
-    <button class="accordion-btn" style="background:#673ab7;" onclick="toggleAccordion(this)">🟣 SQL Projects</button>
-    <div class="accordion-content">
-      <p><strong>SQL Case Study:</strong> Complex data retrieval using Joins, Subqueries, Set Operators.</p>
-      <a class="btn" style="background:#ff5722;" href="https://github.com/Samim984/SQL-CASE-STUDY-" target="_blank">View Full Project</a>
+  <!-- Experience -->
+  <div class="section">
+    <h2>💼 Work Experience</h2>
+    <div class="button-group">
+      <a href="Internship Latter Intellipaat Samim Imtiaz.pdf" class="btn darkblue" target="_blank">Intellipaat Internship</a>
+      <a href="Indovision Experience Certificate.pdf" class="btn blue" target="_blank">Indovision Pvt Ltd</a>
+      <a href="IWS EXPERINCE CERTIFICATE.jpeg" class="btn pink" target="_blank">IWS Pvt Ltd</a>
+      <a href="HAVE_US_HUAWEI_EXEPRIENCE_CERTIFICATE.jpg" class="btn red" target="_blank">Have Us Solution</a>
+      <a href="KELLY_HUAWEI_ EXEPRIENCE_CERTIFICATE.jpg" class="btn purple" target="_blank">Kelly Pvt Ltd</a>
     </div>
   </div>
 
-  <!-- Data Science & AI Projects -->
-  <div class="accordion">
-    <button class="accordion-btn" style="background:#4caf50;" onclick="toggleAccordion(this)">🟢 Data Science & AI Projects</button>
-    <div class="accordion-content">
-      <p><strong>Nifty 50 Analysis | Fintech Strategy | Marketing Spend:</strong></p>
-      <a class="btn" style="background:#009688;" href="https://github.com/Samim984/Nifty_50_e_Indian_Stock_Market" target="_blank">Nifty 50 Stock Analysis</a><br><br>
-      <a class="btn" style="background:#03a9f4;" href="https://github.com/Samim984/A-Fintech-firm-financial-analyze" target="_blank">Fintech Firm Analyze</a><br><br>
-      <a class="btn" style="background:#7b1fa2;" href="https://github.com/Samim984/Online-Advertising-Firm" target="_blank">Marketing Spend Analysis</a>
+  <!-- Education -->
+  <div class="section">
+    <h2>🎓 Education</h2>
+    <div class="button-group">
+      <a href="Certificate Post Graguation DSAI IPTIH 2502197.JPG" class="btn deepblue" target="_blank">PG - Data Science (IIT Roorkee)</a>
+      <span class="btn lightblue">DLED - WB Board</span>
+      <a href="B-TECH CERTIFICATE.jpg" class="btn purple" target="_blank">B.Tech - ECE (WBUT)</a>
+      <a href="HS CERTIFICATE.jpg" class="btn lightgreen" target="_blank">HSC - WBBHSE</a>
+      <a href="MADHAYAMIK CERTIFICATE.jpg" class="btn darkbrown" target="_blank">SSC - WBBSE</a>
     </div>
   </div>
 
-  <!-- Machine Learning Projects -->
-  <div class="accordion">
-    <button class="accordion-btn" style="background:#e91e63;" onclick="toggleAccordion(this)">💗 Machine Learning Projects</button>
-    <div class="accordion-content">
-      <p><strong>Netflix Recommendation | Walmart Forecasting:</strong></p>
-      <a class="btn" style="background:#9c27b0;" href="https://github.com/Samim984/Project-Netflix" target="_blank">Netflix Recommender System</a><br><br>
-      <a class="btn" style="background:#00bcd4;" href="https://github.com/Samim984/Walmart-Project" target="_blank">Walmart Statistical Analysis</a>
+  <!-- Projects -->
+  <div class="section">
+    <h2>📊 Projects</h2>
+
+    <div class="accordion">
+      <button class="accordion-btn" onclick="toggleAccordion(this)">🔵 Power BI Projects</button>
+      <div class="accordion-content">
+        <p><a href="https://github.com/Samim984/8-CAR-SALES-DASHBORD" target="_blank">🚗 CAR SALES Dashboard</a></p>
+        <p><a href="https://github.com/Samim984/WATCH-SALES" target="_blank">⌚ WATCH SALES Dashboard</a></p>
+        <p><a href="https://github.com/Samim984/SALES-OVERVIEW-DASHBORD" target="_blank">📈 SALES OVERVIEW Dashboard</a></p>
+        <p><a href="https://github.com/Samim984/Adidas-Analysis" target="_blank">👟 ADIDAS Sales Analysis</a></p>
+        <p><a href="https://github.com/Samim984/BLINKIT-SALES" target="_blank">🛒 BLINKIT Sales Analysis</a></p>
+        <p><a href="https://github.com/Samim984/Financial-Performance-Analysis" target="_blank">💵 FINANCIAL Dashboard</a></p>
+        <p><a href="https://github.com/Samim984/Adventure-Works-Sales-Return" target="_blank">🧳 ADVENTURE WORKS Analysis</a></p>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <button class="accordion-btn" onclick="toggleAccordion(this)">🟠 SQL Projects</button>
+      <div class="accordion-content">
+        <p><a href="https://github.com/Samim984/SQL-CASE-STUDY-" target="_blank">🗃️ SQL Case Study</a></p>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <button class="accordion-btn" onclick="toggleAccordion(this)">🟢 Data Science & AI Projects</button>
+      <div class="accordion-content">
+        <p><a href="https://github.com/Samim984/Nifty_50_e_Indian_Stock_Market" target="_blank">📈 Nifty 50 Stock Analysis</a></p>
+        <p><a href="https://github.com/Samim984/A-Fintech-firm-financial-analyze" target="_blank">🏦 Fintech Financial Analyze</a></p>
+        <p><a href="https://github.com/Samim984/Online-Advertising-Firm" target="_blank">📊 Online Marketing Spend</a></p>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <button class="accordion-btn" onclick="toggleAccordion(this)">🧠 Machine Learning Projects</button>
+      <div class="accordion-content">
+        <p><a href="https://github.com/Samim984/Project-Netflix" target="_blank">🎬 Netflix Recommendation</a></p>
+        <p><a href="https://github.com/Samim984/Walmart-Project" target="_blank">🏪 Walmart Analysis</a></p>
+      </div>
     </div>
   </div>
+
+  <!-- Achievements -->
+  <div class="section">
+    <h2>🏆 Achievements</h2>
+    <ul>
+      <li>Successfully completed Airtel 5G Rollout</li>
+      <li>Executed JIO 4G Rollout of 850 MHz</li>
+      <li>Managed MTS O&M Operations in North 24 Region</li>
+      <li>Implemented IDEA GSM Network in West Bengal</li>
+      <li>College Champion in Volleyball (2004) and Cricket (2006)</li>
+    </ul>
+  </div>
+
+  <!-- Contact -->
+  <div class="section">
+    <h2>📬 Contact</h2>
+    <p>Email: samimimtiazhuawei@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/Samim984" target="_blank">github.com/Samim984</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/samim-imtiaz-611a35273" target="_blank">linkedin.com/in/samim-imtiaz-611a35273</a></p>
+  </div>
+
 </div>
 
-<!-- Achievements Section -->
-<div class="section">
-  <h2>🏆 Achievements</h2>
-  <ul>
-    <li>Successfully completed Airtel 5G Rollout</li>
-    <li>Executed JIO 4G Rollout of 850 MHz</li>
-    <li>Managed MTS O&M Operations in North 24 Region</li>
-    <li>Implemented IDEA GSM Network in West Bengal</li>
-    <li>College Champion in Volleyball (2004) and Cricket (2006)</li>
-  </ul>
-</div>
-
-<!-- Contact Section -->
-<div class="section">
-  <h2>📬 Contact</h2>
-  <p>Email: samimimtiazhuawei@gmail.com</p>
-  <p>GitHub: <a href="https://github.com/Samim984" target="_blank">github.com/Samim984</a></p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/samim-imtiaz-611a35273" target="_blank">linkedin.com/in/samim-imtiaz-611a35273</a></p>
-</div>
-
-<!-- JavaScript for Accordion -->
 <script>
-function toggleAccordion(btn) {
-  const content = btn.nextElementSibling;
+function toggleAccordion(button) {
+  const content = button.nextElementSibling;
   const isOpen = content.style.display === "block";
-  document.querySelectorAll(".accordion-content").forEach(c => c.style.display = "none");
+  document.querySelectorAll('.accordion-content').forEach(c => c.style.display = 'none');
   if (!isOpen) content.style.display = "block";
 }
 </script>
